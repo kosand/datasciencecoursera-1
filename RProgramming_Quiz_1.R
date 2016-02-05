@@ -26,6 +26,9 @@ missingNA <- is.na(data$Ozone)
 as.numeric(missingNA)
 sum(missingNA)
 
+#or an alternative way and more time efficient
+sum(is.na(data$Ozone))
+
 missingNAN<- is.nan(data$Ozone)
 as.numeric(missingNAN)
 sum(missingNAN)
